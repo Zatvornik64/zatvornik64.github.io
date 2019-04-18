@@ -1,0 +1,171 @@
+/* Общий блок */
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 1020px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-height: 700;
+	color: #000000;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding 0 10px;
+	background-image: url(img/bg1.gif);
+	background-repeat: repeat;
+}
+.container {
+	width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 40px;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 30px;
+}
+.presentation {
+	position: relative;
+	height: 700px;
+}
+
+.slider {
+    position: absolute;
+    left: 30px;
+    top: 110px;
+    width: 958px;
+    height: 540px;
+    opacity: 0;
+    z-index: 1;
+		border: solid 5px #202020;
+		border-radius: 15px;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.slider1 {
+	opacity: 1;
+}
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+.flex {
+	display: flex;
+}
+.badDay p {
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 18px;
+}
+.badDay .flex {
+	justify-content: space-between;
+}
+.badDayLeft,
+.badDayCentre,
+.badDayRight {
+	position: relative;
+
+}
+.leftBg {
+	width:280px;
+	height: 200px;
+	border: solid 5px #202020;
+	border-radius: 15px;
+}
+.men {
+	position: absolute;
+	top: 150px;
+	left: 60px;
+	width:120px;
+	height: 100px;
+	opacity: 0;
+}
+.centreBg {
+	width:280px;
+	height: 200px;
+	border: solid 5px #202020;
+	border-radius: 15px;
+}
+.centreimg {
+	position: absolute;
+	top: 60px;
+
+	width:280px;
+	height: 200px;
+	opacity: 0;
+}
+.centreimg:hover {
+	opacity: 1;
+	z-index: 3;
+	border: solid 5px #202020;
+	border-radius: 15px;
+}
+
+
+.rightBg {
+	width:280px;
+	height: 200px;
+	border: solid 5px #202020;
+	border-radius: 15px;
+}
+.empty{
+	position: absolute;
+	top: 168px;
+	left: 85px;
+	width: 80px;
+	height: 20px;
+	opacity: 0;
+
+}
+.hover {
+	opacity: 1;
+}
+.photo {
+	width: 300px;
+	height: 200px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: solid 5px #202020;
+	border-radius: 15px;
+}
+.logist p {
+	font-size: 18px;
+	text-align: center;
+}
+.logist h3 {
+	font-size: 26px;
+	text-align: center;
+}
+.minitext {
+	font-size: 12px;
+	text-align: center;
+	margin-top: -20px;
+}
