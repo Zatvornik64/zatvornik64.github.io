@@ -10,9 +10,11 @@ body {
 	padding 0;
 	background-image: url(img/bg.jpg);
 	background-repeat: no-repeat;
+	/*background-size: auto;*/
+
 }
 .container {
-	width: 1060px;
+	min-width: 1060px;
   margin: 0 auto;
   padding: 0 0px;
 
@@ -49,10 +51,16 @@ input[type="radio"].visually-hidden {
 	padding-left: 10px;
 	padding-top: 10px;
 }*/
+footer {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	border: 2px solid red;
+}
 .mike {
 	position: absolute;
 	left: 10px;
-	bottom: 10px;
+	bottom: 20px;
 }
 .perf {
 	position: absolute;
