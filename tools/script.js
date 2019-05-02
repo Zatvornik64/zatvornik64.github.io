@@ -86,21 +86,22 @@ var renderItems = function (array) {
 var render = function(){
 var fragment1 = document.createDocumentFragment();
   for (var i = 0; i < perfs.length; i++) {
-    if ((perfs[i].price > (perfMax * minValue)) && (perfs[i].price < (perfMax * maxValue + 1))) { fragment1.appendChild(renderItems(perfs[i]));}
+    if ((perfs[i].price > (perfMin + (perfMax - perfMin) * minValue - 1)) && (perfs[i].price < (perfMax * maxValue + 1))) { fragment1.appendChild(renderItems(perfs[i]));}
   }
 similarPerf.appendChild(fragment1);
 
 var fragment2 = document.createDocumentFragment();
   for (var i = 0; i < molots.length; i++) {
-    if ((molots[i].price > (molotsMax * minValue)) && (molots[i].price < (molotsMax * maxValue + 1))) { fragment2.appendChild(renderItems(molots[i]));}
+    if ((molots[i].price > (molotsMin + (molotsMax - molotsMin) * minValue - 1)) && (molots[i].price < (molotsMax * maxValue + 1))) { fragment2.appendChild(renderItems(molots[i]));}
   }
 similarMolotok.appendChild(fragment2);
 
 var fragment3 = document.createDocumentFragment();
   for (var i = 0; i < klucs.length; i++) {
-    if ((klucs[i].price > (klucsMax * minValue)) && (klucs[i].price < (klucsMax * maxValue + 1))) { fragment3.appendChild(renderItems(klucs[i]));}
+    if ((klucs[i].price > (klucsMin + (klucsMax - klucsMin) * minValue - 1)) && (klucs[i].price < (klucsMax * maxValue + 1))) { fragment3.appendChild(renderItems(klucs[i]));}
   }
 similarKluch.appendChild(fragment3);
+
 };
 
 
@@ -274,13 +275,13 @@ var onMouseMove = function (moveEvt) {
 //      effectLine.style.width = (effectValue * 100) + '%';
 
       };
-      perfPriceMin.textContent = (perfMax * minValue).toFixed();
+      perfPriceMin.textContent = (perfMin + (perfMax - perfMin) * minValue).toFixed();
       perfPriceMax.textContent = (perfMax * maxValue).toFixed();
 
-      kluchPriceMin.textContent = (klucsMax * minValue).toFixed();
+      kluchPriceMin.textContent = (klucsMin + (klucsMax - klucsMin) * minValue).toFixed();
       kluchPriceMax.textContent = (klucsMax * maxValue).toFixed();
 
-      molotokPriceMin.textContent = (molotsMax * minValue).toFixed();
+      molotokPriceMin.textContent = (molotsMin + (molotsMax - molotsMin) * minValue).toFixed();
       molotokPriceMax.textContent = (molotsMax * maxValue).toFixed();
 };
 

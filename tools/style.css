@@ -142,6 +142,7 @@ input[type="radio"].visually-hidden {
 	font-size: 46px;
 	text-transform: uppercase;
 	color: #fff;
+	padding-top: 30px;
 	text-shadow: 1px 0 1px #f00, 0 1px 1px #f00, -1px 0 1px #f00, 0 -1px 1px #f00;
 
 }
