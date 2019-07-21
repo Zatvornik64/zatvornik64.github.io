@@ -7,10 +7,10 @@ body {
 	background-color: #000000;
 	text-align: center;
 	margin: 0 auto;
-	padding 0;
+	padding: 0;
 	background-image: url(img/bg.jpg);
 	background-repeat: no-repeat;
-	/*background-size: auto;*/
+	
 
 }
 .container {
@@ -224,7 +224,7 @@ input[type="radio"].visually-hidden {
 	z-index: 5;
 	top: 160px;
 	left: 35%;
-	width: 120%
+	width: 120%;
 	transform: translateX(-50%);
 
 }
